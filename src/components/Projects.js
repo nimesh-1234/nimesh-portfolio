@@ -7,7 +7,7 @@ import cebApp from "../assets/project-cebapp.jpg";
 
 export function createProjects(container) {
   container.innerHTML = `
-    <section id="projects" class="relative py-28 px-6">
+    <section id="projects" class="relative py-20 md:py-28 px-6">
       <div class="mx-auto max-w-7xl">
         <div class="mb-12">
           <div class="inline-block rounded-full glass px-3 py-1 text-sm text-muted-foreground mb-4">Selected Work</div>

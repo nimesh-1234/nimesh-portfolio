@@ -2,7 +2,7 @@ import { animate, inView } from "framer-motion/dom";
 
 export function createSkills(container) {
   container.innerHTML = `
-    <section id="skills" class="relative py-28 px-6">
+    <section id="skills" class="relative py-20 md:py-28 px-6">
       <div class="mx-auto max-w-6xl">
         <div class="mb-12">
           <div class="inline-block rounded-full glass px-3 py-1 text-sm text-muted-foreground mb-4">Skills & Stack</div>

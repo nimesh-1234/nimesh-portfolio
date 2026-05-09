@@ -6,7 +6,7 @@ export function createHero(container) {
   const phrases = ["Software Engineer", "Backend Developer", "AI Enthusiast", "Cloud Builder"];
   
   container.innerHTML = `
-    <section id="home" class="relative min-h-screen flex items-center pt-28 pb-20 px-6">
+    <section id="home" class="relative min-h-screen flex items-center pt-24 md:pt-32 pb-16 md:pb-20 px-6">
       <div class="mx-auto max-w-7xl w-full grid lg:grid-cols-2 gap-12 items-center">
         <div id="hero-content" class="space-y-6 opacity-0 translate-y-[30px]">
           <div class="inline-flex items-center gap-2 glass rounded-full px-4 py-1.5 text-xs text-muted-foreground">
@@ -65,7 +65,7 @@ export function createHero(container) {
           <div class="relative animate-float">
             <div class="absolute inset-0 bg-gradient-primary rounded-full blur-3xl opacity-50 scale-110"></div>
             <div class="absolute -inset-2 rounded-full bg-gradient-primary opacity-70 blur-md"></div>
-            <div class="relative h-72 w-72 md:h-96 md:w-96 rounded-full overflow-hidden glass p-1">
+            <div class="relative h-64 w-64 sm:h-72 sm:w-72 md:h-96 md:w-96 rounded-full overflow-hidden glass p-1">
               <img
                 src="${profile}"
                 alt="Nimesh Dilshan"
