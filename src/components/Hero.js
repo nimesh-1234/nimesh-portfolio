@@ -32,7 +32,7 @@ export function createHero(container) {
               View Projects <i data-lucide="arrow-right" class="h-4 w-4 transition-transform group-hover:translate-x-1"></i>
             </a>
             <a
-              href="/resume.pdf"
+              href="NIMESH%20DILSHAN%20CV.pdf"
               download="Nimesh_Dilshan_CV.pdf"
               class="inline-flex items-center gap-2 rounded-full glass px-6 py-3 text-sm font-medium hover:bg-white/10 transition"
             >
