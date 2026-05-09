@@ -9,7 +9,7 @@ export function createAbout(container) {
           <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight">Building the <span class="text-gradient">future</span>, one commit at a time</h2>
         </div>
         <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-          <div id="about-content" class="space-y-5 text-muted-foreground leading-relaxed opacity-0 translate-y-[30px] text-center lg:text-left">
+          <div id="about-content" class="space-y-4 sm:space-y-5 text-sm sm:text-base text-muted-foreground leading-relaxed opacity-0 translate-y-[30px] text-justify sm:text-left">
             <p>
              I am a full-stack developer and a Software Engineering undergraduate with a Higher National Diploma in Information Technology (HNDIT). 
              My primary focus is on building reliable, scalable web applications that solve real-world practical problems.
