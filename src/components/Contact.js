@@ -16,13 +16,13 @@ export function createContact(container) {
               <p class="text-sm text-muted-foreground">Reach out through any channel below.</p>
             </div>
             <div class="space-y-4">
-              <a href="mailto:hello@nimesh.dev" class="flex items-start gap-3 group">
+              <a href="mailto:nimeshdilshan869@gmail.com" class="flex items-start gap-3 group">
                 <div class="h-10 w-10 rounded-xl bg-gradient-primary flex items-center justify-center glow">
                   <i data-lucide="mail" class="h-4 w-4 text-primary-foreground"></i>
                 </div>
                 <div>
                   <p class="text-xs text-muted-foreground">Email</p>
-                  <p class="text-sm group-hover:text-primary transition">hello@nimesh.dev</p>
+                  <p class="text-sm group-hover:text-primary transition">nimeshdilshan869@gmail.com</p>
                 </div>
               </a>
               <a href="https://wa.me/94702027869" target="_blank" rel="noreferrer" class="flex items-start gap-3 group">
@@ -116,10 +116,26 @@ export function createContact(container) {
     e.preventDefault();
     const btn = container.querySelector('#submit-btn span');
     btn.textContent = "Sending...";
-    setTimeout(() => {
+
+    const formData = new FormData(formEl);
+
+    fetch("https://formsubmit.co/ajax/nimeshdilshan869@gmail.com", {
+      method: "POST",
+      headers: {
+        'Accept': 'application/json'
+      },
+      body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
       btn.textContent = "Message sent! I'll get back to you soon.";
       formEl.reset();
       setTimeout(() => { btn.textContent = "Send Message"; }, 3000);
-    }, 1200);
+    })
+    .catch(error => {
+      btn.textContent = "Error sending message.";
+      console.error(error);
+      setTimeout(() => { btn.textContent = "Send Message"; }, 3000);
+    });
   });
 }
