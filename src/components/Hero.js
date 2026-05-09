@@ -22,7 +22,7 @@ export function createHero(container) {
             <span id="hero-typing" class="text-gradient"></span><span class="inline-block w-[2px] h-[1em] bg-primary ml-1 animate-pulse align-middle"></span>
           </p>
           <p class="text-base text-muted-foreground max-w-lg leading-relaxed">
-            I craft fast, scalable web experiences and explore the frontier of AI — building tools that feel as good as they perform.
+            I build robust backend systems and scalable web applications, exploring modern AI technologies to create software that is secure and performs exceptionally well.
           </p>
           <div class="flex flex-wrap gap-4 pt-2">
             <a

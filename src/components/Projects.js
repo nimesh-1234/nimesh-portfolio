@@ -1,7 +1,8 @@
 import { animate, inView } from "framer-motion/dom";
-import movie from "../assets/project-movie.jpg";
+import movie from "../assets/project-movie1.png";
 import booking from "../assets/project-booking.jpg";
-import automation from "../assets/project-automation.jpg";
+import ecommerce from "../assets/project-cofeeshop.png";
+import posSystem from "../assets/project-pos.jpg";
 
 export function createProjects(container) {
   container.innerHTML = `
@@ -20,7 +21,8 @@ export function createProjects(container) {
   const projects = [
     { image: movie, title: "Movie Search Web App", description: "Real-time movie discovery with trailers, ratings, and rich metadata powered by the OMDb API.", tags: ["React", "OMDb API", "Tailwind", "TypeScript"], demo: "#", code: "#" },
     { image: booking, title: "Auditorium Booking System", description: "End-to-end management platform for scheduling, seat selection, and event coordination.", tags: ["Laravel", "MySQL", "Vue.js", "REST API"], demo: "#", code: "#" },
-    { image: automation, title: "Developer Automation Tools", description: "Custom scripts including a GitHub auto-commit tool to streamline daily developer workflows.", tags: ["Bash", "Node.js", "GitHub Actions", "Automation"], demo: "#", code: "#" },
+    { image: ecommerce, title: "Coffee Shop Web App", description: "A full-stack e-commerce platform featuring secure user authentication, account locking, and an intuitive ordering system.", tags: ["PHP", "MySQL", "JavaScript", "HTML/CSS"], demo: "#", code: "#" },
+    { image: posSystem, title: "Retail POS System", description: "A Java-based Point of Sale system with MySQL integration. Led a development team to build core modules for inventory, supplier, and sales management.", tags: ["Java", "Swing", "MySQL", "JDBC", "Team Lead"], demo: "#", code: "#" },
   ];
 
   const grid = container.querySelector('#projects-grid');

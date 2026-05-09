@@ -11,17 +11,18 @@ export function createAbout(container) {
         <div class="grid lg:grid-cols-2 gap-10 items-center">
           <div id="about-content" class="space-y-5 text-muted-foreground leading-relaxed opacity-0 translate-x-[-30px]">
             <p>
-              I'm a passionate full-stack developer with a Higher National Diploma in Information Technology (HNDIT),
-              focused on creating performant, scalable web applications that solve real problems.
+             I am a full-stack developer and a Software Engineering undergraduate with a Higher National Diploma in Information Technology (HNDIT). 
+             My primary focus is on building reliable, scalable web applications that solve real-world practical problems.
             </p>
             <p>
-              Lately I've been deep into <span class="text-foreground font-medium">emerging AI technologies</span> —
-              experimenting with LLMOps, LangChain, and intelligent automation. I love bridging the gap between robust
-              backend systems and beautiful, intuitive frontends.
+              My technical stack is built on a strong foundation of OOP and database management.
+               I actively build robust systems using Java, PHP, Laravel, and Vue.js, and 
+               I recently expanded my capabilities by completing comprehensive training in the MERN stack.
             </p>
             <p>
-              When I'm not shipping code, I'm contributing to open source, writing automation tools, or learning the next
-              piece of the cloud-native puzzle.
+              Beyond writing code, I bring hands-on operational experience to my work. 
+              I currently work as a remote Software Engineering Intern, and 
+              my background includes leading development projects and managing on-site IT systems administration.
             </p>
           </div>
 
@@ -31,7 +32,7 @@ export function createAbout(container) {
                 <i data-lucide="rocket" class="h-6 w-6 text-primary-foreground"></i>
               </div>
               <div>
-                <div class="text-3xl font-bold text-gradient"><span class="counter" data-to="2">0</span>+</div>
+                <div class="text-3xl font-bold text-gradient"><span class="counter" data-to="1">0</span>+</div>
                 <div class="text-sm text-muted-foreground">Years Experience</div>
               </div>
             </div>
@@ -40,7 +41,7 @@ export function createAbout(container) {
                 <i data-lucide="code-2" class="h-6 w-6 text-primary-foreground"></i>
               </div>
               <div>
-                <div class="text-3xl font-bold text-gradient"><span class="counter" data-to="15">0</span>+</div>
+                <div class="text-3xl font-bold text-gradient"><span class="counter" data-to="8">0</span>+</div>
                 <div class="text-sm text-muted-foreground">Projects Completed</div>
               </div>
             </div>
@@ -49,7 +50,7 @@ export function createAbout(container) {
                 <i data-lucide="brain" class="h-6 w-6 text-primary-foreground"></i>
               </div>
               <div>
-                <div class="text-3xl font-bold text-gradient"><span class="counter" data-to="20">0</span>+</div>
+                <div class="text-3xl font-bold text-gradient"><span class="counter" data-to="12">0</span>+</div>
                 <div class="text-sm text-muted-foreground">Technologies Mastered</div>
               </div>
             </div>

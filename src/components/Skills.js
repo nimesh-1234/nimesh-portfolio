@@ -15,10 +15,10 @@ export function createSkills(container) {
   `;
 
   const groups = [
-    { icon: "layout", title: "Frontend", color: "from-purple-500 to-pink-500", skills: ["Vue.js", "React", "JavaScript", "TypeScript", "HTML / CSS", "Tailwind"] },
-    { icon: "server", title: "Backend", color: "from-blue-500 to-cyan-500", skills: ["Laravel", "Node.js", "Express.js", "Java", "REST APIs", "PostgreSQL"] },
-    { icon: "cloud", title: "Cloud & DevOps", color: "from-cyan-500 to-emerald-500", skills: ["AWS", "Docker", "GitHub Actions", "CI/CD", "Linux", "Nginx"] },
-    { icon: "sparkles", title: "Emerging Tech", color: "from-fuchsia-500 to-violet-500", skills: ["LangChain", "LLMOps", "Azure AI", "OpenAI APIs", "Vector DBs", "RAG"] },
+    { icon: "layout", title: "Frontend", color: "from-purple-500 to-pink-500", skills: ["Vue.js", "JavaScript","HTML / CSS", "Tailwind"] },
+    { icon: "server", title: "Backend", color: "from-blue-500 to-cyan-500", skills: ["Laravel", "Node.js", "Express.js", "Java", "REST APIs", "MySQL", "MongoDB"] },
+    { icon: "cloud", title: "Cloud & DevOps", color: "from-cyan-500 to-emerald-500", skills: ["AWS", "Docker", "GitHub Actions"] },
+    { icon: "sparkles", title: "Emerging Tech", color: "from-fuchsia-500 to-violet-500", skills: ["OpenAI"] },
   ];
 
   const grid = container.querySelector('#skills-grid');
