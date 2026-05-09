@@ -25,6 +25,15 @@ export function createContact(container) {
                   <p class="text-sm group-hover:text-primary transition">hello@nimesh.dev</p>
                 </div>
               </a>
+              <a href="https://wa.me/94702027869" target="_blank" rel="noreferrer" class="flex items-start gap-3 group">
+                <div class="h-10 w-10 rounded-xl bg-gradient-primary flex items-center justify-center glow">
+                  <i data-lucide="phone" class="h-4 w-4 text-primary-foreground"></i>
+                </div>
+                <div>
+                  <p class="text-xs text-muted-foreground">WhatsApp</p>
+                  <p class="text-sm group-hover:text-primary transition">+94 70 202 7869</p>
+                </div>
+              </a>
               <div class="flex items-start gap-3">
                 <div class="h-10 w-10 rounded-xl bg-gradient-primary flex items-center justify-center glow">
                   <i data-lucide="map-pin" class="h-4 w-4 text-primary-foreground"></i>
@@ -88,8 +97,8 @@ export function createContact(container) {
     });
   }
 
-  import('lucide').then(({ createIcons, Mail, MapPin, Send, Github, Linkedin, ArrowUp }) => {
-    createIcons({ icons: { Mail, MapPin, Send, Github, Linkedin, ArrowUp } });
+  import('lucide').then(({ createIcons, Mail, MapPin, Phone, Send, Github, Linkedin, ArrowUp }) => {
+    createIcons({ icons: { Mail, MapPin, Phone, Send, Github, Linkedin, ArrowUp } });
   });
 
   const infoEl = container.querySelector('#contact-info');

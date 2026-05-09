@@ -1,9 +1,9 @@
 import { animate } from "framer-motion/dom";
 import { Github, Linkedin, Mail, Download, ArrowRight, Sparkles } from "lucide";
-import profile from "@/assets/profile.jpg";
+import profile from "../assets/profile.png";
 
 export function createHero(container) {
-  const phrases = ["Full-Stack Developer", "Software Engineer", "AI Enthusiast", "Cloud Builder"];
+  const phrases = ["Software Engineer", "Backend Developer", "AI Enthusiast", "Cloud Builder"];
   
   container.innerHTML = `
     <section id="home" class="relative min-h-screen flex items-center pt-28 pb-20 px-6">
@@ -33,6 +33,7 @@ export function createHero(container) {
             </a>
             <a
               href="/resume.pdf"
+              download="Nimesh_Dilshan_CV.pdf"
               class="inline-flex items-center gap-2 rounded-full glass px-6 py-3 text-sm font-medium hover:bg-white/10 transition"
             >
               <i data-lucide="download" class="h-4 w-4"></i> Resume
@@ -51,8 +52,11 @@ export function createHero(container) {
             <a href="https://linkedin.com" target="_blank" rel="noreferrer" class="glass h-11 w-11 rounded-full flex items-center justify-center hover:text-primary hover:scale-110 transition">
               <i data-lucide="linkedin" class="h-5 w-5"></i>
             </a>
-            <a href="mailto:hello@nimesh.dev" target="_blank" rel="noreferrer" class="glass h-11 w-11 rounded-full flex items-center justify-center hover:text-primary hover:scale-110 transition">
+            <a href="mailto:nimeshdilshan869@gmail.com" target="_blank" rel="noreferrer" class="glass h-11 w-11 rounded-full flex items-center justify-center hover:text-primary hover:scale-110 transition">
               <i data-lucide="mail" class="h-5 w-5"></i>
+            </a>
+            <a href="https://wa.me/94702027869" target="_blank" rel="noreferrer" class="glass h-11 w-11 rounded-full flex items-center justify-center hover:text-primary hover:scale-110 transition">
+              <i data-lucide="phone" class="h-5 w-5"></i>
             </a>
           </div>
         </div>
@@ -78,9 +82,9 @@ export function createHero(container) {
   `;
 
   // Initialize Lucide icons
-  import('lucide').then(({ createIcons, Sparkles, ArrowRight, Download, Github, Linkedin, Mail }) => {
+  import('lucide').then(({ createIcons, Sparkles, ArrowRight, Download, Github, Linkedin, Mail, Phone }) => {
     createIcons({
-      icons: { Sparkles, ArrowRight, Download, Github, Linkedin, Mail }
+      icons: { Sparkles, ArrowRight, Download, Github, Linkedin, Mail, Phone }
     });
   });
 

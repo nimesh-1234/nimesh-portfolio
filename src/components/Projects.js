@@ -1,7 +1,7 @@
 import { animate, inView } from "framer-motion/dom";
-import movie from "@/assets/project-movie.jpg";
-import booking from "@/assets/project-booking.jpg";
-import automation from "@/assets/project-automation.jpg";
+import movie from "../assets/project-movie.jpg";
+import booking from "../assets/project-booking.jpg";
+import automation from "../assets/project-automation.jpg";
 
 export function createProjects(container) {
   container.innerHTML = `
