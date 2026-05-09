@@ -1,26 +1,47 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Background } from "@/components/portfolio/Background";
+import { CursorGlow } from "@/components/portfolio/CursorGlow";
+import { ScrollProgress } from "@/components/portfolio/ScrollProgress";
+import { Navbar } from "@/components/portfolio/Navbar";
+import { Hero } from "@/components/portfolio/Hero";
+import { About } from "@/components/portfolio/About";
+import { Skills } from "@/components/portfolio/Skills";
+import { Projects } from "@/components/portfolio/Projects";
+import { Experience } from "@/components/portfolio/Experience";
+import { Contact, Footer } from "@/components/portfolio/Contact";
+import { Toaster } from "@/components/ui/sonner";
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Nimesh Dilshan — Full-Stack Developer & Software Engineer" },
+      { name: "description", content: "Portfolio of Nimesh Dilshan — Full-Stack Developer building scalable web apps and AI-powered tools with React, Laravel, Node.js, and LangChain." },
+      { property: "og:title", content: "Nimesh Dilshan — Full-Stack Developer" },
+      { property: "og:description", content: "Full-Stack Developer & Software Engineer crafting modern web experiences and exploring emerging AI technologies." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
+function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="relative min-h-screen bg-background text-foreground">
+      <Background />
+      <CursorGlow />
+      <ScrollProgress />
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Experience />
+        <Contact />
+      </main>
+      <Footer />
+      <Toaster />
     </div>
   );
-}
-
-function Index() {
-  return <PlaceholderIndex />;
 }
